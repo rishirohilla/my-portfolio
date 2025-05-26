@@ -1,0 +1,434 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  /* Cupcake Theme */
+  .cupcake {
+    --background: 24 100% 98%;
+    --foreground: 330 81% 14%;
+    --card: 24 100% 95%;
+    --card-foreground: 330 81% 14%;
+    --popover: 24 100% 95%;
+    --popover-foreground: 330 81% 14%;
+    --primary: 330 81% 60%;
+    --primary-foreground: 24 100% 98%;
+    --secondary: 24 30% 90%;
+    --secondary-foreground: 330 81% 14%;
+    --muted: 24 30% 90%;
+    --muted-foreground: 330 30% 40%;
+    --accent: 330 81% 85%;
+    --accent-foreground: 330 81% 14%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 24 100% 98%;
+    --border: 24 30% 85%;
+    --input: 24 30% 85%;
+    --ring: 330 81% 60%;
+  }
+
+  /* Bumblebee Theme */
+  .bumblebee {
+    --background: 48 100% 96%;
+    --foreground: 45 100% 9%;
+    --card: 48 100% 93%;
+    --card-foreground: 45 100% 9%;
+    --popover: 48 100% 93%;
+    --popover-foreground: 45 100% 9%;
+    --primary: 45 93% 47%;
+    --primary-foreground: 48 100% 96%;
+    --secondary: 48 30% 85%;
+    --secondary-foreground: 45 100% 9%;
+    --muted: 48 30% 85%;
+    --muted-foreground: 45 30% 35%;
+    --accent: 45 93% 80%;
+    --accent-foreground: 45 100% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 48 100% 96%;
+    --border: 48 30% 80%;
+    --input: 48 30% 80%;
+    --ring: 45 93% 47%;
+  }
+
+  /* Emerald Theme */
+  .emerald {
+    --background: 152 81% 96%;
+    --foreground: 164 100% 11%;
+    --card: 152 81% 93%;
+    --card-foreground: 164 100% 11%;
+    --popover: 152 81% 93%;
+    --popover-foreground: 164 100% 11%;
+    --primary: 160 84% 39%;
+    --primary-foreground: 152 81% 96%;
+    --secondary: 152 30% 85%;
+    --secondary-foreground: 164 100% 11%;
+    --muted: 152 30% 85%;
+    --muted-foreground: 164 30% 35%;
+    --accent: 160 84% 80%;
+    --accent-foreground: 164 100% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 152 81% 96%;
+    --border: 152 30% 80%;
+    --input: 152 30% 80%;
+    --ring: 160 84% 39%;
+  }
+
+  /* Corporate Theme */
+  .corporate {
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 210 11% 15%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 210 11% 15%;
+    --primary: 210 11% 15%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 6% 93%;
+    --secondary-foreground: 210 11% 15%;
+    --muted: 210 6% 93%;
+    --muted-foreground: 210 6% 46%;
+    --accent: 210 11% 85%;
+    --accent-foreground: 210 11% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 6% 87%;
+    --input: 210 6% 87%;
+    --ring: 210 11% 15%;
+  }
+
+  /* Synthwave Theme */
+  .synthwave {
+    --background: 258 90% 15%;
+    --foreground: 280 100% 85%;
+    --card: 258 90% 12%;
+    --card-foreground: 280 100% 85%;
+    --popover: 258 90% 12%;
+    --popover-foreground: 280 100% 85%;
+    --primary: 280 100% 70%;
+    --primary-foreground: 258 90% 15%;
+    --secondary: 258 30% 25%;
+    --secondary-foreground: 280 100% 85%;
+    --muted: 258 30% 25%;
+    --muted-foreground: 280 30% 65%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 258 90% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 280 100% 85%;
+    --border: 258 30% 30%;
+    --input: 258 30% 30%;
+    --ring: 280 100% 70%;
+  }
+
+  /* Retro Theme */
+  .retro {
+    --background: 48 100% 88%;
+    --foreground: 25 95% 25%;
+    --card: 48 100% 85%;
+    --card-foreground: 25 95% 25%;
+    --popover: 48 100% 85%;
+    --popover-foreground: 25 95% 25%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 48 100% 88%;
+    --secondary: 48 30% 75%;
+    --secondary-foreground: 25 95% 25%;
+    --muted: 48 30% 75%;
+    --muted-foreground: 25 30% 45%;
+    --accent: 25 95% 75%;
+    --accent-foreground: 25 95% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 48 100% 88%;
+    --border: 48 30% 70%;
+    --input: 48 30% 70%;
+    --ring: 25 95% 53%;
+  }
+
+  /* Cyberpunk Theme */
+  .cyberpunk {
+    --background: 240 100% 7%;
+    --foreground: 180 100% 85%;
+    --card: 240 100% 5%;
+    --card-foreground: 180 100% 85%;
+    --popover: 240 100% 5%;
+    --popover-foreground: 180 100% 85%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 100% 7%;
+    --secondary: 270 100% 25%;
+    --secondary-foreground: 180 100% 85%;
+    --muted: 270 100% 25%;
+    --muted-foreground: 180 30% 65%;
+    --accent: 270 100% 70%;
+    --accent-foreground: 240 100% 7%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 180 100% 85%;
+    --border: 270 30% 30%;
+    --input: 270 30% 30%;
+    --ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    cursor: none;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  .font-orbitron {
+    font-family: var(--font-orbitron), system-ui, sans-serif;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono), monospace;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
+}
+
+/* Glitch effect keyframes */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* Holographic effect */
+.holographic {
+  background: linear-gradient(45deg, transparent 30%, hsl(var(--primary) / 0.1) 50%, transparent 70%);
+  background-size: 200% 200%;
+  animation: holographic-shine 3s ease-in-out infinite;
+}
+
+@keyframes holographic-shine {
+  0% {
+    background-position: -200% -200%;
+  }
+  50% {
+    background-position: 200% 200%;
+  }
+  100% {
+    background-position: -200% -200%;
+  }
+}
+
+/* Neon glow effect */
+.neon-glow {
+  text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse ring animation */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+  }
+  40%,
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+.pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+/* Matrix rain effect */
+@keyframes matrix-rain {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.matrix-rain {
+  animation: matrix-rain 3s linear infinite;
+}
+
+/* Cyberpunk grid */
+.cyber-grid {
+  background-image: linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glowing border animation */
+@keyframes glow-border {
+  0%,
+  100% {
+    box-shadow: 0 0 5px hsl(var(--primary) / 0.5), 0 0 10px hsl(var(--primary) / 0.3), 0 0 15px
+      hsl(var(--primary) / 0.1);
+  }
+  50% {
+    box-shadow: 0 0 10px hsl(var(--accent) / 0.5), 0 0 20px hsl(var(--accent) / 0.3), 0 0 30px hsl(var(--accent) / 0.1);
+  }
+}
+
+.glow-border {
+  animation: glow-border 2s ease-in-out infinite alternate;
+}
+
+/* Typewriter effect */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid hsl(var(--primary) / 0.75);
+  white-space: nowrap;
+  animation: typewriter 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: hsl(var(--primary) / 0.75);
+  }
+}
+
+/* Particle trail effect */
+.particle-trail {
+  position: relative;
+  overflow: hidden;
+}
+
+.particle-trail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.2), transparent);
+  animation: particle-sweep 2s infinite;
+}
+
+@keyframes particle-sweep {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
