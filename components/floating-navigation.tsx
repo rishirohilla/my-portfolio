@@ -2,12 +2,24 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Home, User, Code, Briefcase, Mail, Menu, X } from "lucide-react"
+import {
+  Home,
+  User,
+  Code,
+  Briefcase,
+  Mail,
+  Menu,
+  X,
+  Trophy,
+  BrainCircuit,
+} from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 const navItems = [
   { icon: Home, label: "Home", href: "#home" },
   { icon: User, label: "About", href: "#about" },
+  { icon: Trophy, label: "Achievements", href: "#achievements" },
+  { icon: BrainCircuit, label: "CP", href: "#competitive-programming" },
   { icon: Code, label: "Skills", href: "#skills" },
   { icon: Briefcase, label: "Projects", href: "#projects" },
   { icon: Mail, label: "Contact", href: "#contact" },
@@ -58,12 +70,14 @@ export function FloatingNavigation() {
 
       {/* Desktop Floating Navigation */}
       <motion.nav
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="fixed right-8 top-1/2 -translate-y-1/2 z-40 hidden md:block"
-      >
-        <div className="bg-card/80 backdrop-blur-md rounded-2xl border border-border p-2">
+  initial={{ x: 100, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ delay: 1 }}
+  className="fixed right-8 top-10 bottom-10 z-40 hidden md:flex flex-col justify-between"
+>
+
+<div className="flex-1 bg-card/80 backdrop-blur-md rounded-2xl border border-border p-2 flex flex-col justify-between">
+
           {navItems.map((item, index) => (
             <motion.button
               key={item.label}

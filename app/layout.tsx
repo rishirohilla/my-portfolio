@@ -16,19 +16,19 @@ const orbitron = Orbitron({
 })
 
 export const metadata: Metadata = {
-  title: "Alex Chen - Creative Developer",
-  description: "Innovative full-stack developer crafting digital experiences that push boundaries",
-  keywords: ["Alex Chen", "Creative Developer", "Full Stack", "React", "Next.js", "Portfolio"],
-  authors: [{ name: "Alex Chen" }],
-  creator: "Alex Chen",
+  title: "Rishi Rohilla - Innovator",
+  description: "Competitive Programmer, Innovative full-stack developer crafting digital experiences that push boundaries",
+  keywords: ["Rishi Rohilla","Competitive Programmer", "Creative Developer", "Full Stack", "React", "Next.js", "Portfolio"],
+  authors: [{ name: "Rishi Rohilla" }],
+  creator: "Rishi Rohilla",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://alexchen.dev",
-    title: "Alex Chen - Creative Developer",
+    title: "Rishi Rohilla - Innovator",
     description: "Innovative full-stack developer crafting digital experiences that push boundaries",
-    siteName: "Alex Chen Portfolio",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Alex Chen Portfolio" }],
+    siteName: "Rishi Rohilla Portfolio",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "Rishi Rohilla Portfolio" }],
   },
     generator: 'v0.dev'
 }

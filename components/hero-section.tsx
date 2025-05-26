@@ -49,7 +49,25 @@ export function HeroSection() {
               {"<Competitive Programmer>"}
             </motion.div>
 
+            {/* Avatar Image */}
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="flex justify-center"
+            >
+              <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-cyan-400/60 shadow-lg shadow-cyan-500/30 animate-pulse bg-gradient-to-br from-cyan-800/20 to-purple-800/20">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQFOu20VPwdbAg/profile-displayphoto-shrink_400_400/B56ZUpmKexHsAg-/0/1740159630418?e=1753920000&v=beta&t=oXQsTDCTgj0scwgh0ZYwVdCyP9xj0C9ctGCNpvWo_NE"
+                  alt="Rishi Rohilla"
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </motion.div>
+
+            {/* Name */}
             <GlitchText text="Rishi Rohilla" className="text-6xl md:text-8xl font-orbitron font-bold" />
+
 
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
@@ -68,11 +86,11 @@ export function HeroSection() {
             transition={{ delay: 1.2, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
           >
-            Crafting{" "}
+            Crafting code, scaling ideas - a{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-semibold">
-              digital experiences
+            tech-savvy
             </span>{" "}
-            that push the boundaries of what's possible
+             creator from IIIT Lucknow
           </motion.div>
 
           {/* Holographic cards */}
@@ -125,14 +143,14 @@ export function HeroSection() {
             onClick={scrollToNext}
             data-cursor-hover
           >
-            <motion.div
+            {/* <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
               className="flex flex-col items-center space-y-2 text-gray-400 hover:text-cyan-400 transition-colors"
             >
               <span className="text-sm font-mono">scroll</span>
               <ChevronDown className="w-5 h-5" />
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </motion.div>
       </div>
