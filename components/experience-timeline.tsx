@@ -5,14 +5,52 @@ import { Calendar, MapPin, Briefcase } from "lucide-react"
 
 const experiences = [
   {
+    title: "Began my coding journey at IIIT Lucknow",
+    company: "Indian Institute of Information Technology Lucknow",
+    location: "Lucknow, Uttar Pradesh",
+    period: "Nov 2022 - June 2026",
+    description: [
+      "Discovered a deep interest in problem-solving and technology while pursuing B.Tech in CS & Business.",
+    ],
+    technologies: [],
+  },
+  {
+    title: "Competitive Programming Enthusiast",
+    company: "Codeforces",
+    location: "Online (Codeforces, CodeChef, LeetCode)",
+    period: "Nov 2022 - Present",
+    description: [
+      "Over the past few years, I’ve built the habit of solving competitive programming problem, maintained a 300+ day streak across platforms like Codeforces, CodeChef, and LeetCode. This daily practice has shaped the way I think, improving problem-solving skills, consistency, and the ability to learn something new every single day.",
+    ],
+    technologies: [
+      "C++ (STL)",
+      "Data Structures (Arrays, Trees, Graphs, Heaps)",
+      "Algorithms (DP, Greedy, Graph Algorithms)",
+      "Number Theory",
+      "Bit Manipulation",
+      "Binary Search",
+      "Two Pointers",
+    ],
+  },
+  {
     title: "Full Stack Engineering Intern",
     company: "Innomatics Research Labs",
     location: "Remote (India)",
     period: "Jan 2025 - Mar 2025",
     description: [
-      "Developed and maintained full-stack web applications using modern technologies including React.js, Node.js, Ex- press.js, and MongoDB. Built responsive and dynamic user interfaces with React.js, enhancing interactivity and im- proving user experience across modules. Implemented user authentication and authorization using JWT and OAuth2.",
+      "Hi Developed and maintained full-stack web applications using modern technologies including React.js, Node.js, Ex- press.js, and MongoDB. Built responsive and dynamic user interfaces with React.js, enhancing interactivity and im- proving user experience across modules. Implemented user authentication and authorization using JWT and OAuth2.",
     ],
     technologies: ["React", "Node.js", "Express.js", "MongoDb", "OAuth2"],
+  },
+  {
+    title: "Evolving as a Full-Stack Developer",
+    company: "Web Development",
+    location: "Self-Directed (Remote)",
+    period: "Nov 2022 - Present",
+    description: [
+      "Exploring Next.js, AI APIs & modern architectures to craft human-centered digital experiences.",
+    ],
+    technologies: ["React", "Node.js", "JavaScript", "Next.js", "Redux"],
   },
   {
     title: "Hacktoberfest Contributor",
@@ -27,7 +65,7 @@ const experiences = [
     ],
     technologies: ["Git", "JavaScript", "Python", "HTML", "CSS", "React"],
   },
-  
+
 ]
 
 export function ExperienceTimeline() {

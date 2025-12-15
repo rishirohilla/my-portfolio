@@ -12,9 +12,10 @@ export default function Home() {
     <div className="relative">
       <HeroSection />
       <AboutSection />
-      <AchievementsSection />
       <CompetitiveProgrammingSection />
       <SkillsOrbit />
+      <AchievementsSection />
+      
       <ProjectsSection />
       <ExperienceTimeline />
       <ContactPortal />

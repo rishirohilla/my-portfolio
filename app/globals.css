@@ -232,6 +232,55 @@
   .font-mono {
     font-family: var(--font-mono), monospace;
   }
+
+  /* Force all text elements to use theme-aware colors globally */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  div,
+  a,
+  li,
+  label,
+  input,
+  textarea,
+  button {
+    color: hsl(var(--foreground));
+  }
+
+  /* Override specific color classes to use theme colors */
+  .text-white {
+    color: hsl(var(--foreground)) !important;
+  }
+
+  .text-gray-300,
+  .text-gray-400,
+  .text-gray-500,
+  .text-gray-600 {
+    color: hsl(var(--muted-foreground)) !important;
+  }
+
+  .text-cyan-400,
+  .text-cyan-500,
+  .text-purple-400,
+  .text-purple-500,
+  .text-blue-400,
+  .text-blue-500 {
+    color: hsl(var(--primary)) !important;
+  }
+
+  .bg-white {
+    background-color: hsl(var(--background)) !important;
+  }
+
+  .bg-gray-900,
+  .bg-gray-800 {
+    background-color: hsl(var(--card)) !important;
+  }
 }
 
 html {
