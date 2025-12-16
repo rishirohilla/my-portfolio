@@ -10,7 +10,7 @@ const experiences = [
     location: "Lucknow, Uttar Pradesh",
     period: "Nov 2022 - June 2026",
     description: [
-      "Discovered a deep interest in problem-solving and technology while pursuing B.Tech in CS & Business.",
+      "Discovered a deep interest in problem-solving and technology while pursuing B.Tech in Computer Science",
     ],
     technologies: [],
   },
