@@ -352,7 +352,7 @@ export function HeroSection() {
             >
               <div className="w-72 h-72 rounded-full overflow-hidden border-4 border-black-400/60 shadow-lg shadow-black-500/30 animate-pulse bg-gradient-to-br from-cyan-800/20 to-purple-800/20">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQH1NU2mJvksYA/profile-displayphoto-scale_400_400/B56ZsjOLqKIYAg-/0/1765822503573?e=1767225600&v=beta&t=NJ4YbKOJEH9sc4ZnIQ8Ro7mvTrpae_6kjCra7E7mV8o"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQH1NU2mJvksYA/profile-displayphoto-scale_200_200/B56ZsjOLqKIYAY-/0/1765822503573?e=1770854400&v=beta&t=J3xkpedpuDVAEjuwkC-ORZq_EStLolU6Qr9Mu2OYWH8"
                   alt="Rishi Rohilla"
                   className="object-cover w-full h-full"
                 />
